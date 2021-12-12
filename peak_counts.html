@@ -1,0 +1,185 @@
+
+
+  <!------------------------------
+    --  peak_counts.html        --
+    --  Chieh-An Lin            --
+    --  Version 2021.03.03      --
+    ------------------------------>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Personal website of Chieh-An Lin (aka Linc)" />
+        <meta property="og:title" content="WL peak counts | Chieh-An Lin - Systems Engineer" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://linc.tw/peak_counts.html" />
+        <meta property="og:image" content="https://linc.tw/figures/home/Linc.jpg" />
+        <meta property="og:description" content="Personal website of Chieh-An Lin (aka Linc)" />
+        
+        <title>WL peak counts | Chieh-An Lin - Systems Engineer</title>
+        
+        <!-- Bootstrap style -->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <!-- Fancy box style -->
+        <link href="js/source/jquery.fancybox.css" rel="stylesheet" />
+        <!-- Custom style -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- Favicon -->
+        <link href="figures/home/Favicon.ico" rel="shortcut icon" />
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <div class="navbar navbar-default navbar-fixed-top scroll-me">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right text-right">
+                        <li><a href="index.html#Home">linc.tw</a></li>
+                        <li><a href="index.html#About">About</a></li>
+                        <li><a href="index.html#Research">Research</a></li>
+                        <li><a href="index.html#CV">CV</a></li>
+                        <li><a href="index.html#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="bg-common">
+            <div class="bg-darkred">
+                <div class="container pad-section-2">
+                    <h1 class="text-center">Weak-lensing peak counts</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white">
+            <div class="container pad-section">
+                <div class="row pad-paragraph text-justify">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
+                        <br>
+                        <h3>What are peak counts?</h3>
+                        <p>
+                            Weak-lensing <b>peaks</b> are local maxima of a lensing map. 
+                            They are direct traces of dark-matter halos which are very massive structures in the Universe.
+                        </p>
+                        <p>
+                            As the population of halos (mass function) depends strongly on cosmology, peaks help constraining cosmological parameters.
+                            Promising results from peaks have already been shown in literature.
+                        </p>
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-3 col-lg-offset-0 text-center">
+                        <a class="fancybox-media gallery" href="figures/peak_counts/Peak_selection.png" title="Local maxima selected by white dots on a weak-lensing convergence map. Red, yellow pixels represent high convergence, while purple, black ones stand for low values.">
+                            <img class="img-gallery" style="max-width: 280px;" src="figures/peak_counts/Peak_selection.png" alt="Peak_selection" />
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row pad-paragraph text-justify">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                        <h3>A new model for prediction</h3>
+                        <p>
+                            We have developped a prediction model for weak-lensing peak counts using a stochastic forward approach. The summary of the algorithm is as follows:
+                        </p>
+                        <p align="center">
+                            <a class="fancybox-media gallery" href="figures/peak_counts/LK_model_2.png" title="Summary in 4 steps of our stochastic forward model for weak-lensing peak counts. (Fig. 2, Lin et al. 2016)">
+                                <img class="img-gallery" style="max-width:800px;" src="figures/peak_counts/LK_model_2.png" alt="LK_model" />
+                            </a>
+                        </p>
+                        <p>
+                            We have shown that in this way, the prediction agrees well with $N$-body simulations. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row pad-paragraph text-justify">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
+                        <br>
+                        <br>
+                        <p>
+                            Three advantages can be outlined from this model:
+                        </p>
+                        <ul>
+                            <li><strong>Fast</strong> - only few seconds for creating a 25-deg$^2$ field, without MPI or GPU programming</li>
+                            <li><strong>Flexible</strong> - straightforward to include observational effects (e.g. photo-$z$ errors, masks) and additional features (e.g. intrinsic alignment, baryonic effects)</li>
+                            <li><strong>Full PDF information</strong> - allow more flexible constraint methods such as varying covariances, $p$-value evaluation, approximate Bayesian computation, etc.</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 col-lg-4 col-lg-offset-0 text-center">
+                        <a class="fancybox-media gallery" href="figures/ABC/ABC_stair_contours.png" title="An example of parameter constraints by our model. (Fig. 9, Lin et al. 2016)">
+                            <img class="img-gallery" src="figures/ABC/ABC_stair_contours.png" alt="ABC_contour" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-common">
+            <div class="bg-darkred">
+                <div class="container pad-section-3">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 text-justify">
+                        <h3>Publications</h3>
+                        <p>
+                            <ul>
+                                <li><a href="http://arxiv.org/abs/1704.00258" target="_blank">Lin & Kilbinger (2018)</a> - A&A, 614, A36</li>
+                                <li><a href="http://arxiv.org/abs/1612.02264" target="_blank">Peel, Lin, et al. (2017)</a> - A&A, 599, A79</li>
+                                <li><a href="http://arxiv.org/abs/1603.06773" target="_blank">Lin et al. (2016)</a> - A&A, 593, A88</li>
+                                <li><a href="http://arxiv.org/abs/1506.01076" target="_blank">Lin & Kilbinger (2015b)</a> - A&A, 583, A70</li>
+                                <li><a href="http://arxiv.org/abs/1410.6955" target="_blank">Lin & Kilbinger (2015a)</a> - A&A, 576, A24</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer section -->
+        <footer>
+            © 2014-2021 <a href="http://linc.tw/">linc.tw</a>  | by <a href="http://www.designbootstrap.com/" target="_blank">DesignBootstrap</a>
+        </footer>
+        
+        <!-- Scripts -->
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <!-- Scrolling script plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" crossorigin="anonymous"></script>
+        <!-- FancyBox plugin -->
+        <script src="js/source/jquery.fancybox.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome icons style -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, TeX: {extensions: ["autobold.js", "color.js"]}});
+        </script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58898441-3"></script>
+        <script>
+            var host = window.location.hostname;
+            if (!host in ["localhost", "127.0.0.1"]) {    
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-58898441-3');
+            }
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,167 @@
+
+
+  <!------------------------------
+    --  full_sky_sims.html      --
+    --  Chieh-An Lin            --
+    --  Version 2021.03.03      --
+    ------------------------------>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Personal website of Chieh-An Lin (aka Linc)" />
+        <meta property="og:title" content="Full-sky simulations | Chieh-An Lin - Systems Engineer" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://linc.tw/full_sky_sims.html" />
+        <meta property="og:image" content="https://linc.tw/figures/home/Linc.jpg" />
+        <meta property="og:description" content="Personal website of Chieh-An Lin (aka Linc)" />
+        
+        <title>Full-sky simulations | Chieh-An Lin - Systems Engineer</title>
+        
+        <!-- Bootstrap style -->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <!-- Fancy box style -->
+        <link href="js/source/jquery.fancybox.css" rel="stylesheet" />
+        <!-- Custom style -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- Favicon -->
+        <link href="figures/home/Favicon.ico" rel="shortcut icon" />
+    </head>
+    
+    <body>
+        <!-- Navigation bar -->
+        <div class="navbar navbar-default navbar-fixed-top scroll-me">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right text-right">
+                        <li><a href="index.html#Home">linc.tw</a></li>
+                        <li><a href="index.html#About">About</a></li>
+                        <li><a href="index.html#Research">Research</a></li>
+                        <li><a href="index.html#CV">CV</a></li>
+                        <li><a href="index.html#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="bg-common">
+            <div class="bg-darkred">
+                <div class="container pad-section-2">
+                    <h1 class="text-center">Full-sky simulations</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white">
+            <div class="container pad-section">
+                <div class="row pad-paragraph text-justify">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-7 col-sm-offset-0 col-md-6 col-md-offset-1 col-lg-4 col-lg-offset-2">
+                        <h3>Replicate a universe</h3>
+                        <p>
+                            In order to study large-scale survey effects in observations, cosmologists make use of simulations. 
+                            In these simulations, as many galaxies as we observe are generated, as if we create a brand new universe.
+                        </p>
+                        <p>
+                            In a cosmological survey, not all galaxies are observed. 
+                            This is due to various reasons, like weather, star sparkles, or survey design.
+                            Simulations have to account for the proper footprint of a survey, as well as holes that are masked out.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0 text-center">
+                        <br>
+                        <a class="fancybox-media gallery" href="figures/full_sky_sims/Total_mask_2_astro.png" title="Footprints of the BOSS, 2dFLenS, and KiDS surveys. The overlapping and separated regions have some complex shapes. (Adapted from Fig. 5, Joachimi, Lin, et al. 2020)">
+                            <img class="img-gallery" src="figures/full_sky_sims/Total_mask_2_astro.png" alt="BOSS+2dFLenS+KiDS footprints" />
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row pad-paragraph text-justify">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-2 text-center">
+                        <a class="fancybox-media gallery" href="figures/full_sky_sims/nOfZComp_egretta.png" title="Redshift distributions from the BOSS and KiDS surveys. The figure compares the input with the reconstructed distribution from fast simulations. (Adapted from Fig. 6, Joachimi, Lin, et al. 2020)">
+                            <img class="img-gallery" src="figures/full_sky_sims/nOfZComp_egretta.png" alt="Redshift distribution" />
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-7 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-4 col-lg-offset-0">
+                        <br>
+                        <p>
+                            On the other hands, galaxies are not distant in the same way.
+                            The line-of-sight variation can correlate with the angular one.
+                        </p>
+                        <p>
+                            We developped a software able to generate fast full-sky simulations.
+                            It deals with different variations properly when multiple overlapping surveys are considered together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-common">
+            <div class="bg-darkred">
+                <div class="container pad-section-3">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-11 col-md-offset-1 col-lg-9 col-lg-offset-2 text-justify">
+                        <h3>Publications</h3>
+                        <p>
+                            <ul>
+                                <li><a href="http://arxiv.org/abs/2010.16416" target="_blank">Tröster et al. (2021)</a> - A&A, 649, A88</li>
+                                <li><a href="http://arxiv.org/abs/2007.15632" target="_blank">Heymans et al. (2021)</a> - A&A, 646, A140</li>
+                                <li><a href="http://arxiv.org/abs/2007.15633" target="_blank">Asgari, Lin et al. (2021)</a> - A&A, 645, A104</li>
+                                <li><a href="http://arxiv.org/abs/2007.01845" target="_blank">Giblin et al. (2021)</a> - A&A, 645, A105</li>
+                                <li><a href="http://arxiv.org/abs/2007.01844" target="_blank">Joachimi, Lin et al. (2021)</a> - A&A, 646, A129</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer section -->
+        <footer>
+            © 2014-2021 <a href="http://linc.tw/">linc.tw</a>  | by <a href="http://www.designbootstrap.com/" target="_blank">DesignBootstrap</a>
+        </footer>
+        
+        <!-- Scripts -->
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <!-- Scrolling script plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" crossorigin="anonymous"></script>
+        <!-- FancyBox plugin -->
+        <script src="js/source/jquery.fancybox.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome icons style -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, TeX: {extensions: ["autobold.js", "color.js"]}});
+        </script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58898441-3"></script>
+        <script>
+            var host = window.location.hostname;
+            if (!host in ["localhost", "127.0.0.1"]) {    
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-58898441-3');
+            }
+        </script>
+    </body>
+</html>
+
