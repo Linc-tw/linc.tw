@@ -8,26 +8,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Metadata - common part -->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Personal website of Chieh-An Lin (aka Linc)" />
-        <meta property="og:title" content="Home | Chieh-An Lin - Systems Engineer" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://linc.tw/index.html" />
         <meta property="og:image" content="https://linc.tw/figures/home/Linc.jpg" />
         <meta property="og:description" content="Personal website of Chieh-An Lin (aka Linc)" />
         
-        <title>Home | Chieh-An Lin - Systems Engineer</title>
-        
-        <!-- Bootstrap style -->
+        <!-- CSS & favicon -->
         <link href="css/bootstrap.css" rel="stylesheet" />
-        <!-- Fancy box style -->
         <link href="js/source/jquery.fancybox.css" rel="stylesheet" />
-        <!-- Custom style -->
         <link href="css/style.css" rel="stylesheet" />
-        <!-- Favicon -->
         <link href="figures/home/Favicon.ico" rel="shortcut icon" />
+        
+        <!-- Metadata - variable part -->
+        <meta property="og:title" content="Home | Chieh-An Lin - Systems Engineer" />
+        <meta property="og:url" content="https://linc.tw/index.html" />
+        <title>Home | Chieh-An Lin - Systems Engineer</title>
     </head>
     
     <body>
@@ -77,14 +76,7 @@
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 col-lg-5 col-lg-offset-0">
                             <div class="pad-about text-justify">
-                                <p>
-                                    My name is Chieh-An, but people usually call me <b>Linc</b>. 
-                                    I am a systems engineer at <a href="http://www.wpc.com.tw/" target="_blank">WPC Systems Ltd.</a> in Taipei area in Taiwan.</li>
-                                    Prior to the current appointment, I was a researcher in cosmology.
-                                    Information related to my research works can be found on this website.
-                                    My career path includes the UK and France
-                                    where I obtained my PhD degree in 2016, advised by <a href="http://www.cosmostat.org/people/kilbinger" target="_blank">Martin Kilbinger</a>.
-                                </p>
+                                <span id="str_about"></span>
                             </div>
                         </div>
                     </div>
@@ -204,7 +196,9 @@
                             <i class="fa fa-envelope fa-3x fa-fw"></i>
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
-                            <h3 class="text-contact-1">calin <i class="fa fa-at"></i> wpc.com.tw</h3>
+                            <h3 class="text-contact-1">
+                                <span id="str_email"></span>
+                            </h3>
                         </div>
                     </div>
                     <div class="row pad-contact">
@@ -212,7 +206,9 @@
                             <i class="fa fa-phone fa-3x fa-fw"></i>
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
-                            <h3 class="text-contact-1">+886 2 8262 4431</h3>
+                            <h3 class="text-contact-1">
+                                <span id="str_phone"></span>
+                            </h3>
                         </div>
                     </div>
                     <div class="row pad-contact">
@@ -221,10 +217,7 @@
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
                             <h4 class="text-contact-2">
-                                新北市土城區青雲路55號<br>
-                                55 Qingyun Road<br>
-                                Tucheng, New Taipei<br>
-                                Taiwan
+                                <span id="str_address"></span>
                             </h4>
                         </div>
                     </div>
@@ -234,28 +227,20 @@
         
         <!-- Footer section -->
         <footer>
-            2014-2022 <a href="https://linc.tw/">linc.tw</a>  | by <a href="http://www.designbootstrap.com/" target="_blank">DesignBootstrap</a>
+            <span id="str_footer"></span>
         </footer>
         
-        <!-- Scripts -->
-        
-        <!-- jquery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-        <!-- Bootstrap -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <!-- Scrolling script plugin -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" crossorigin="anonymous"></script>
-        <!-- FancyBox plugin -->
-        <script src="js/source/jquery.fancybox.js" crossorigin="anonymous"></script>
-        <!-- Font Awesome icons style -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <!-- MathJax -->
+        <!-- External -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script> <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> <!-- Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" crossorigin="anonymous"></script> <!-- Scrolling script plugin -->
+        <script src="js/source/jquery.fancybox.js" crossorigin="anonymous"></script> <!-- FancyBox plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script> <!-- Font Awesome icons style -->
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, TeX: {extensions: ["autobold.js", "color.js"]}});
         </script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <!-- Custom -->
-        <script src="js/custom.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> <!-- MathJax -->
+        
         <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58898441-3"></script>
         <script>
@@ -267,5 +252,8 @@
                 gtag('config', 'UA-58898441-3');
             }
         </script>
+        
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
     </body>
 </html>
