@@ -1,5 +1,4 @@
 ﻿
-
    /******************************
     **  style.css               **
     **  Chieh-An Lin            **
@@ -131,9 +130,10 @@ h1 {
 .bg-white h2 {
     color: #000000;
     text-decoration: underline;
-    -webkit-text-decoration-color: #660018;
-    -moz-text-decoration-color: #660018;
-    text-decoration-color: #660018;
+    text-decoration-thickness: 2px;
+    -webkit-text-decoration-color: #660022;
+    -moz-text-decoration-color: #660022;
+    text-decoration-color: #660022;
 }
 
 .bg-white a:link, 
@@ -152,7 +152,7 @@ h1 {
 .bg-darkred .bg-white a:active, 
 .bg-black .bg-white a:hover, 
 .bg-black .bg-white a:active {
-    color: #660018;
+    color: #660022;
     text-decoration: underline;
 }
 
@@ -165,6 +165,7 @@ h1 {
 .bg-darkred h2 {
     color: #ffffff;
     text-decoration: underline;
+    text-decoration-thickness: 2px;
     -webkit-text-decoration-color: #000000;
     -moz-text-decoration-color: #000000;
     text-decoration-color: #000000;
@@ -199,9 +200,10 @@ h1 {
 .bg-black h2 {
     color: #ffffff;
     text-decoration: underline;
+    text-decoration-thickness: 2px;
     -webkit-text-decoration-color: #aa2233;
     -moz-text-decoration-color: #aa2233;
-    text-decoration-color: #660018;
+    text-decoration-color: #660022;
 }
 
 .bg-black a:link, 
@@ -471,4 +473,3 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     padding: 10px;
     height: auto;
 }
-

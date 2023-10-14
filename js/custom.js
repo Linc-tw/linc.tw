@@ -70,10 +70,12 @@ function getAboutStr() {
   var str = '<p>';
   str += 'My name is Chieh-An, but people usually call me <b>Linc</b>. ';
   str += 'I am a systems engineer at <a href="http://www.wpc.com.tw/" target="_blank">WPC Systems Ltd.</a> in Taipei area in Taiwan.</li> ';
+  str += '</p>';
+  str += '<p> ';
   str += 'Prior to the current appointment, I was a researcher in cosmology. ';
-  str += 'Information related to my research works can be found on this website. ';
-  str += 'My career path includes the UK and France where I obtained my PhD degree in 2016, ';
-  str += 'advised by <a href="http://www.cosmostat.org/people/kilbinger" target="_blank">Martin Kilbinger</a>. ';
+  str += 'My career path includes the France, UK, and Taiwan. ';
+  str += 'I possess expertise in data analysis with machine learning and the development of real-time embedded systems. ';
+  str += 'For more information, please take a moment to explore this website.';
   str += '</p>';
   return str;
 }

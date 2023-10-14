@@ -1,8 +1,8 @@
 
   <!--------------------------------
-    --  var_depth.html            --
+    --  HIL.html                  --
     --  Chieh-An Lin              --
-    --  2023.10.11                --
+    --  2023.10.14                --
     -------------------------------->
 
 <!DOCTYPE html>
@@ -24,11 +24,11 @@
         <link href="figures/home/Favicon.ico" rel="shortcut icon" />
         
         <!-- Metadata - variable part -->
-        <meta property="og:title" content="Variable depth | Chieh-An Lin - Systems Engineer" />
-        <meta property="og:url" content="https://linc.tw/var_depth.html" />
-        <title>Variable depth | Chieh-An Lin - Systems Engineer</title>
+        <meta property="og:title" content="Hardware-in-the-loop | Chieh-An Lin - Systems Engineer" />
+        <meta property="og:url" content="https://linc.tw/HIL.html" />
+        <title>Hardware-in-the-loop | Chieh-An Lin - Systems Engineer</title>
     </head>
-    
+
     <body>
         <!-- Navigation bar -->
         <div class="navbar navbar-default navbar-fixed-top scroll-me">
@@ -56,7 +56,7 @@
         <div class="bg-common">
             <div class="bg-darkred">
                 <div class="container pad-section-2">
-                    <h1 class="text-center">Variable depth</h1>
+                    <h1 class="text-center">Hardware-in-the-loop</h1>
                 </div>
             </div>
         </div>
@@ -64,67 +64,60 @@
         <div class="bg-white">
             <div class="container pad-section">
                 <div class="row pad-paragraph text-justify">
-                    <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-2 text-center">
-                        <a class="fancybox-media gallery" href="figures/var_depth/KiDS_projRLimMap_astro.png" title="Variation of observing depth from the Kilo-Degree Survey (KiDS). The panels respectively present the North and South fields. The depth is characterized by the r-band magnitude limit. (Adapted from Fig. 5, Joachimi, Lin, et al. 2020)">
-                            <img class="img-gallery" src="figures/var_depth/KiDS_projRLimMap_astro.png" alt="KiDS-1000_variable_depth_pattern" />
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2 text-center">
+                        <a class="fancybox-media gallery" href="figures/HIL/Fixing_circuit.jpg" title="A visualization of the conception of <q>harware-in-the-loop</q> created by Dall-E 3.">
+                            <img class="img-gallery" src="figures/HIL/Fixing_circuit.jpg" alt="Fixing_circuit" />
                         </a>
                     </div>
-                    <div class="col-xs-12 col-xs-offset-0 col-sm-7 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-4 col-lg-offset-0">
-                        <h3>What is variable depth?</h3>
-                        <p>
-                            Due to fluctuating weather conditions, data quality is not uniform between different observing nights.
-                            This causes a selection effect called <b>variable depth</b> as the depth of observations varies spatially.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="row pad-paragraph text-justify">
-                    <div class="col-xs-12 col-xs-offset-0 col-sm-7 col-sm-offset-0 col-md-6 col-md-offset-1 col-lg-4 col-lg-offset-2">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 col-lg-4 col-lg-offset-0">
                         <br>
+                        <br>
+                        <h3>What is hardware-in-the-loop?</h3>
                         <p>
-                            This is a potential source of systematic biases for weak-lensing surveys. 
-                            However, variable depth has never been quantified before.
+                            <strong>Hardware-in-the-loop</strong> (HIL) is an engineering testing method. 
+                            It connects physical components to a simulated environment, allowing for the validation of control systems, 
+                            particularly in complex fields like aerospace, automotive, and power systems.
                         </p>
-                        <p>
-                            In the KiDS collaboration, we found that galaxy number density and shape noise depend on variable depth.
-                            Both quantities vary linearly with $r_\mathrm{lim}$, quantity that we use to characterize the depth of pointings.
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0 text-center">
-                        <a class="fancybox-media gallery" href="figures/var_depth/KiDS_nEff_sigmaEff_varDepth.png" title="Variable depth effects from the Kilo-Degree Survey (KiDS). This shows how the effective galaxy number density and observed ellipticity dispersion can be affected by the r-band magnitude limit, representing variable survey depth. (Fig. 8, Joachimi, Lin et al.)">
-                            <img class="img-gallery" style="max-width: 300px;" src="figures/var_depth/KiDS_nEff_sigmaEff_varDepth.png" alt="KiDS-1000_variable_depth_dependency" />
-                        </a>
                     </div>
                 </div>
                 
                 <div class="row pad-paragraph text-justify">
-                    <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-2 text-center">
-                        <a class="fancybox-media gallery" href="figures/var_depth/VD_model_comparison.png" title="Comparison of variable depth models to simulations. We see that they agree very well. (Fig. 4, Heydenreich et al. 2020)">
-                            <img class="img-gallery" src="figures/var_depth/VD_model_comparison.png" alt="Variable_depth_model_comparison" />
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-xs-offset-0 col-sm-7 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-4 col-lg-offset-0">
-                        <h3>How big is the impact?</h3>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-2">
+                        <h3>How does it work?</h3>
                         <p>
-                            We have proposed two approaches, one analytical and another simulation-based, to model the impact of variable depth on observables.
-                            We showed that they agreed with each other and found a 3% deviation from the ideal scenario for a KiDS-like survey.
+                            In this method, the simulated environment, known as the "loop", mimics the behavior of the overall system.
+                            Meanwhile, physical hardware components such as sensors, actuators, or controllers, interact with the loop.
+                            They are usually referred to as "plants".
                         </p>
+                        <p>
+                            By connecting a plant to the loop, engineers can meticulously assess and refine control algorithms in a repeatable manner.
+                            This dynamic interaction allows for thorough testing under diverse conditions, promoting early issue detection and resolution.
+                        </p>
+                        <br>
+                        <h3>Reliable and cost-effective</h3>
+                        <p>
+                            HIL significantly enhances development efficiency. 
+                            It offers a middle ground between virtual simulations and costly physical testing, reducing risks and costs. 
+                            Engineers can identify and address potential issues in the control system early in the development process.
+                            Therefore, it improves the overall reliability and success of intricate engineering projects.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 col-lg-4 col-lg-offset-0 text-center">
+                        <br>
+                        <br>
+                        <a class="fancybox-media gallery" href="figures/HIL/Roller_coaster.jpg" title="A roller coaster going through a loop is definitely not an example of hardware-in-the-loop.">
+                            <img class="img-gallery" style="max-width:400px;" src="figures/HIL/Roller_coaster.jpg" alt="Roller_coaster" />
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         
+        <!-- Pseudo-footer -->
         <div class="bg-common">
             <div class="bg-darkred">
                 <div class="container pad-section-3">
-                    <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-11 col-md-offset-1 col-lg-9 col-lg-offset-2 text-justify">
-                        <h3>Publications</h3>
-                        <p>
-                            <ul>
-                                <li><a href="http://arxiv.org/abs/2007.01844" target="_blank">Joachimi, Lin, et al. (2021)</a> - A&A, 646, A129</li>
-                                <li><a href="http://arxiv.org/abs/1910.11327" target="_blank">Heydenreich et al. (2020)</a> - A&A, 634, A104</li>
-                            </ul>
-                        </p>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 text-justify">
                     </div>
                 </div>
             </div>

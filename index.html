@@ -2,7 +2,7 @@
   <!--------------------------------
     --  index.html                --
     --  Chieh-An Lin              --
-    --  2022.01.18                --
+    --  2023.10.14                --
     -------------------------------->
 
 <!DOCTYPE html>
@@ -44,7 +44,7 @@
                     <ul class="nav navbar-nav navbar-right text-right">
                         <li><a href="#Home">linc.tw</a></li>
                         <li><a href="#About">About</a></li>
-                        <li><a href="#Research">Research</a></li>
+                        <li><a href="#Work">Work</a></li>
                         <li><a href="#CV">CV</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
@@ -52,7 +52,7 @@
             </div>
         </div>
         
-        <!-- Home section -->
+        <!-- Home -->
         <div id="Home" class="bg-common">
             <div class="pad-home">
                 <div class="container">
@@ -65,8 +65,8 @@
             </div>
         </div>
         
-        <!-- About section -->
-        <section id="About">
+        <!-- About -->
+        <div id="About">
             <div class="bg-white">
                 <div class="container pad-section">
                     <h2 class="pad-title text-center">About me</h2>
@@ -82,99 +82,91 @@
                     </div>
                 </div>
             </div>
-        </section>
-            
-        <!-- Research section -->
-        <section id="Research" class="bg-common">
+        </div>
+        
+        <!-- Work -->
+        <div id="Work" class="bg-common">
             <div class="bg-black">
                 <div class="container pad-section">
-                    <h2 class="pad-title text-center">Research interests</h2>
-                    <div class="row"> 
+                    <h2 class="pad-title text-center">Current work</h2>
+                    <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="button margin-button-1 bg-white">
-                                <a href="WL.html" target="">
+                                <a href="RT.html" target="">
                                     <div class="bg-button-1" style="background-image: url('figures/WL/Abell_1689_bis_(HST).jpg')" ></div>
-                                    <h3 class="text-button-1 text-center">Weak lensing</h3>
+                                    <h3 class="text-button-1 text-center">Real-time systems</h3>
                                 </a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="button margin-button-1 bg-darkred">
-                                <a href="peak_counts.html" target="">
+                                <a href="DAQ.html" target="">
                                     <div class="bg-button-1" style="background-image: url('figures/peak_counts/Peak_selection.png')" ></div>
-                                    <h3 class="text-button-1 text-center">Peak counts</h3>
+                                    <h3 class="text-button-1 text-center">DAQs & controllers</h3>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-4 col-md-push-0 col-lg-3 col-lg-push-0">
+                        <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-4 col-md-push-0 col-lg-3">
                             <div class="button margin-button-1 bg-white">
-                                <a href="ABC.html" target="">
+                                <a href="HIL.html" target="">
                                     <div class="bg-button-1" style="background-image: url('figures/ABC/ABC_toy_model_1.png')" ></div>
-                                    <h4 class="text-button-1 text-center">Approximate Bayesian computation</h4>
+                                    <h3 class="text-button-1 text-center">Hardware-in-the-loop</h3>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-4 col-md-pull-0 col-lg-3 col-lg-pull-0">
+                        <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-4 col-md-pull-0 col-lg-3">
                             <div class="button margin-button-1 bg-darkred">
-                                <a href="photo_z.html" target="">
+                                <a href="safety_critical.html" target="">
                                     <div class="bg-button-1" style="background-image: url('figures/photo_z/Redshift.png')" ></div>
-                                    <h4 class="text-button-1 text-center">Photometric redshift estimation</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-lg-offset-3">
-                            <div class="button margin-button-1 bg-white">
-                                <a href="var_depth.html" target="">
-                                    <div class="bg-button-1" style="background-image: url('figures/var_depth/VD_pattern.png')" ></div>
-                                    <h3 class="text-button-1 text-center">Variable depth</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="button margin-button-1 bg-darkred">
-                                <a href="full_sky_sims.html" target="">
-                                    <div class="bg-button-1" style="background-image: url('figures/full_sky_sims/Full-sky_simulations.png')" ></div>
-                                    <h3 class="text-button-1 text-center">Full-sky simulations</h3>
+                                    <h3 class="text-button-1 text-center">Safety-critical industries</h3>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         
-        <!-- CV section -->
-        <section id="CV">
+        <!-- CV -->
+        <div id="CV">
             <div class="bg-white">
                 <div class="container pad-section">
                     <h2 class="pad-title text-center">Curriculum vitæ</h2>
-                    <div class="row"> 
-                        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 col-lg-offset-2">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-sm-offset-2 col-md-3 col-lg-2 col-lg-offset-3">
                             <div class="button margin-button-2 bg-darkred text-center">
-                                <a href="publications.html" target="">
-                                    <i class="fa fa-book fa-4x"></i>
-                                    <h3>Publications</h3>
+                                <a href="experiences.html" target="">
+                                    <i class="fas fa-chalkboard-teacher fa-4x"></i>
+                                    <h3>Experiences</h3>
                                 </a>
                             </div>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 col-lg-offset-0">
                             <div class="button margin-button-2 bg-black text-center">
-                                <a href="experiences.html" target="">
-                                    <i class="fa fa-graduation-cap fa-4x"></i>
-                                    <h3>Experiences</h3>
+                                <a href="portfolio.html" target="">
+                                    <i class="fa fa-book fa-4x"></i>
+                                    <h3>Portfolio</h3>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-xs-push-6 col-sm-3 col-sm-push-0 col-md-3 col-md-push-0 col-lg-2 col-lg-push-0">
+                        <div class="col-xs-6 col-xs-push-6 col-sm-3 col-sm-push-0 col-md-3 col-lg-2 col-lg-offset-0">
                             <div class="button margin-button-2 bg-darkred text-center">
+                                <a href="reserach.html" target="">
+                                    <i class="fas fa-vials fa-4x"></i>
+                                    <h3>Reserach</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-xs-pull-6 col-sm-3 col-sm-offset-3 col-sm-pull-0 col-md-3 col-lg-2 col-lg-offset-4">
+                            <div class="button margin-button-2 bg-black text-center">
                                 <a href="personal.html" target="">
-                                    <i class="fa fa-universal-access fa-4x"></i>
+                                    <i class="fas fa-running fa-4x"></i>
                                     <h3>Personal</h3>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-xs-pull-6 col-sm-3 col-sm-pull-0 col-md-3 col-md-pull-0 col-lg-2 col-lg-pull-0">
-                            <div class="button margin-button-2 bg-black text-center">
+                        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 col-lg-offset-0">
+                            <div class="button margin-button-2 bg-darkred text-center">
                                 <a href="portfolio/2021.10.17_CV_Linc.pdf" target="">
                                     <i class="far fa-file-pdf fa-4x"></i>
                                     <h3>PDF</h3>
@@ -184,10 +176,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         
-        <!-- Contact section -->
-        <section id="Contact" class="bg-common">
+        <!-- Contact -->
+        <div id="Contact" class="bg-common">
             <div class="bg-darkred">
                 <div class="container pad-section">
                     <h2 class="pad-title text-center">Contact</h2>
@@ -223,9 +215,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         
-        <!-- Footer section -->
+        <!-- Footer -->
         <footer>
             <span id="str_footer"></span>
         </footer>
