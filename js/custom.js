@@ -54,8 +54,8 @@ function getEMailStr() {
   return 'calin <i class="fa fa-at"></i> wpc.com.tw';
 }
 
-function getPhoneStr() {
-  return '+886 2 8262 4431';
+function getGitHubStr() {
+  return 'Linc-tw';
 }
 
 function getAddressStr() {
@@ -73,7 +73,7 @@ function getAboutStr() {
   str += '</p>';
   str += '<p> ';
   str += 'Prior to the current appointment, I was a researcher in cosmology. ';
-  str += 'My career path includes the France, UK, and Taiwan. ';
+  str += 'My career path includes France, the UK, and Taiwan. ';
   str += 'I possess expertise in data analysis with machine learning and the development of real-time embedded systems. ';
   str += 'For more information, please take a moment to explore this website.';
   str += '</p>';
@@ -87,7 +87,7 @@ $(document).ready(function () {
   //-- Insert footer string
   addHtml('str_footer', getFooterStr());
   addHtml('str_email', getEMailStr());
-  addHtml('str_phone', getPhoneStr());
+  addHtml('str_github', getGitHubStr());
   addHtml('str_address', getAddressStr());
   addHtml('str_about', getAboutStr());
 
