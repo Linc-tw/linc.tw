@@ -69,7 +69,7 @@ function getAddressStr() {
 function getAboutStr() {
   var str = '<p>';
   str += 'My name is Chieh-An, but people usually call me <b>Linc</b>. ';
-  str += 'I am a systems engineer at <a href="http://www.wpc.com.tw/" target="_blank">WPC Systems Ltd.</a> in Taipei area in Taiwan.</li> ';
+  str += 'I am a systems engineer at <a href="http://www.wpc.com.tw/" target="_blank">WPC Systems Ltd.</a> in Taipei area in Taiwan. ';
   str += '</p>';
   str += '<p> ';
   str += 'Prior to the current appointment, I was a researcher in cosmology. ';
