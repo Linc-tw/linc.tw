@@ -51,7 +51,7 @@ function getFooterStr() {
 }
 
 function getEMailStr() {
-  return 'calin <i class="fa fa-at"></i> wpc.com.tw';
+  return 'linc <i class="fa fa-at"></i> radiantnuclear.com';
 }
 
 function getGitHubStr() {
@@ -59,22 +59,20 @@ function getGitHubStr() {
 }
 
 function getAddressStr() {
-  var str = '新北市土城區青雲路55號<br>';
-  str += '55 Qingyun Road<br>';
-  str += 'Tucheng, New Taipei<br>';
-  str += 'Taiwan';
+  var str = '1921 E Maple Ave<br>';
+  str += 'El Segundo, CA 90245<br>';
+  str += 'USA';
   return str;
 }
 
 function getAboutStr() {
   var str = '<p>';
   str += 'My name is Chieh-An, but people usually call me <b>Linc</b>. ';
-  str += 'I am a systems engineer at <a href="http://www.wpc.com.tw/" target="_blank">WPC Systems Ltd.</a> in Taipei area in Taiwan. ';
+  str += 'I am a senior software engineer at <a href="http://www.radiantnuclear.com/" target="_blank">Radiant Industries, Inc.</a> in Southern California. ';
   str += '</p>';
   str += '<p> ';
-  str += 'Prior to the current appointment, I was a researcher in cosmology. ';
-  str += 'My career path includes France, the UK, and Taiwan. ';
-  str += 'I possess expertise in data analysis with machine learning and the development of real-time embedded systems. ';
+  str += 'Prior to the current appointment, I conducted scientific research in cosmology and developed embedded software for real-time systems. ';
+  str += 'My career journey has taken me across France, the UK, Taiwan, and the USA. ';
   str += 'For more information, please take a moment to explore this website.';
   str += '</p>';
   return str;

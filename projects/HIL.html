@@ -1,8 +1,8 @@
 
   <!--------------------------------
-    --  safety_critical.html      --
+    --  HIL.html                  --
     --  Chieh-An Lin              --
-    --  2023.10.14                --
+    --  2024.11.10                --
     -------------------------------->
 
 <!DOCTYPE html>
@@ -18,15 +18,15 @@
         <meta property="og:description" content="Personal website of Chieh-An Lin (aka Linc)" />
         
         <!-- CSS & favicon -->
-        <link href="css/bootstrap.css" rel="stylesheet" />
-        <link href="js/source/jquery.fancybox.css" rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet" />
-        <link href="figures/home/Favicon.ico" rel="shortcut icon" />
+        <link href="../css/bootstrap.css" rel="stylesheet" />
+        <link href="../js/source/jquery.fancybox.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" />
+        <link href="../figures/home/Favicon.ico" rel="shortcut icon" />
         
         <!-- Metadata - variable part -->
-        <meta property="og:title" content="Safety-critical industries | Chieh-An Lin - Systems Engineer" />
-        <meta property="og:url" content="https://linc.tw/safety_critical.html" />
-        <title>Safety-critical industries | Chieh-An Lin - Systems Engineer</title>
+        <meta property="og:title" content="Hardware-in-the-loop | Chieh-An Lin - Software Engineering for Physics" />
+        <meta property="og:url" content="https://linc.tw/projects/HIL.html" />
+        <title>Hardware-in-the-loop | Chieh-An Lin - Software Engineering for Physics</title>
     </head>
 
     <body>
@@ -42,11 +42,11 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right text-right">
-                        <li><a href="index.html#Home">linc.tw</a></li>
-                        <li><a href="index.html#About">About</a></li>
-                        <li><a href="index.html#Work">Work</a></li>
-                        <li><a href="index.html#CV">CV</a></li>
-                        <li><a href="index.html#Contact">Contact</a></li>
+                        <li><a href="../index.html#Home">linc.tw</a></li>
+                        <li><a href="../index.html#About">About</a></li>
+                        <li><a href="../index.html#Work">Work</a></li>
+                        <li><a href="../index.html#CV">CV</a></li>
+                        <li><a href="../index.html#Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,7 +56,7 @@
         <div class="bg-common">
             <div class="bg-darkred">
                 <div class="container pad-section-2">
-                    <h1 class="text-center">Safety-critical industries</h1>
+                    <h1 class="text-center">Hardware-in-the-loop</h1>
                 </div>
             </div>
         </div>
@@ -65,36 +65,49 @@
             <div class="container pad-section">
                 <div class="row pad-paragraph text-justify">
                     <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2 text-center">
-                        <a class="fancybox-media gallery" href="figures/safety_critical/Cockpit.jpg" title="A cockpit. Avionic is a typical example of safety-critical industries.">
-                            <img class="img-gallery" src="figures/safety_critical/Cockpit.jpg" alt="Cockpit" />
+                        <a class="fancybox-media gallery" href="../figures/HIL/Fixing_circuit.jpg" title="A visualization of the conception of <q>harware-in-the-loop</q> created by Dall-E 3.">
+                            <img class="img-gallery" src="../figures/HIL/Fixing_circuit.jpg" alt="Fixing_circuit" />
                         </a>
-                        <br>
-                        <br>
                     </div>
                     <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 col-lg-4 col-lg-offset-0">
                         <br>
                         <br>
+                        <h3>What is hardware-in-the-loop?</h3>
                         <p>
-                            <strong>Safety-critical industries</strong> demand rigorous standards to prevent catastrophic failures that could endanger lives or the environment.
-                            These sectors prioritize safety measures to mitigate risks associated with complex systems and processes.
-                            Stringent regulations, continuous monitoring, and advanced technologies are adapted to identify, address, and minimize potential hazards.
+                            <strong>Hardware-in-the-loop</strong> (HIL) is an engineering testing method. 
+                            It connects physical components to a simulated environment, allowing for the validation of control systems, 
+                            particularly in complex fields like aerospace, automotive, and power systems.
                         </p>
                     </div>
                 </div>
                 
                 <div class="row pad-paragraph text-justify">
-                    <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-2">
+                        <h3>How does it work?</h3>
                         <p>
-                            In my current role, I engage in diverse projects within safety-critical industries, including aviation, rail transportation, and marine systems.
-                            This engagement spans both the design and application aspects of products developed by our team within the company.
+                            In this method, the simulated environment, known as the "loop", mimics the behavior of the overall system.
+                            Meanwhile, physical hardware components such as sensors, actuators, or controllers, interact with the loop.
+                            They are usually referred to as "plants".
+                        </p>
+                        <p>
+                            By connecting a plant to the loop, engineers can meticulously assess and refine control algorithms in a repeatable manner.
+                            This dynamic interaction allows for thorough testing under diverse conditions, promoting early issue detection and resolution.
                         </p>
                         <br>
-                        <br>
-                        <p align="center">
-                            <a class="fancybox-media gallery" href="figures/safety_critical/TYM.jpg" title="Engineers puting a testing wheelset on the rail.">
-                                <img class="img-gallery" style="max-width:700px;" src="figures/safety_critical/TYM.jpg" alt="TYM" />
-                            </a>
+                        <h3>Reliable and cost-effective</h3>
+                        <p>
+                            HIL significantly enhances development efficiency. 
+                            It offers a middle ground between virtual simulations and costly physical testing, reducing risks and costs. 
+                            Engineers can identify and address potential issues in the control system early in the development process.
+                            Therefore, it improves the overall reliability and success of intricate engineering projects.
                         </p>
+                    </div>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 col-lg-4 col-lg-offset-0 text-center">
+                        <br>
+                        <br>
+                        <a class="fancybox-media gallery" href="../figures/HIL/Roller_coaster.jpg" title="A roller coaster going through a loop is definitely not an example of hardware-in-the-loop.">
+                            <img class="img-gallery" style="max-width:400px;" src="../figures/HIL/Roller_coaster.jpg" alt="Roller_coaster" />
+                        </a>
                     </div>
                 </div>
             </div>
